@@ -1,0 +1,110 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "StateT2",
+"class": "AirState",
+"language": "GDScript",
+"path": "res://State2class/AirState.gd"
+}, {
+"base": "State",
+"class": "ChargeState",
+"language": "GDScript",
+"path": "res://StateClass/PlayerFSM/ChargeState.gd"
+}, {
+"base": "StateT2",
+"class": "FallStateT2",
+"language": "GDScript",
+"path": "res://FallStateT2.gd"
+}, {
+"base": "State",
+"class": "IdleState",
+"language": "GDScript",
+"path": "res://StateClass/PlayerFSM/IdleState.gd"
+}, {
+"base": "StateT2",
+"class": "IdleStateT2",
+"language": "GDScript",
+"path": "res://Idle2.gd"
+}, {
+"base": "StateT2",
+"class": "JumpStateT2",
+"language": "GDScript",
+"path": "res://JumpStateT2.gd"
+}, {
+"base": "StateT2",
+"class": "MoveStateT2",
+"language": "GDScript",
+"path": "res://MoveStateT2.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "PersistentState",
+"language": "GDScript",
+"path": "res://Player.gd"
+}, {
+"base": "State",
+"class": "RunState",
+"language": "GDScript",
+"path": "res://StateClass/PlayerFSM/RunState.gd"
+}, {
+"base": "Node2D",
+"class": "State",
+"language": "GDScript",
+"path": "res://StateClass/State.gd"
+}, {
+"base": "Reference",
+"class": "StateFactory",
+"language": "GDScript",
+"path": "res://StateClass/StateFactory.gd"
+}, {
+"base": "Reference",
+"class": "StateFactoryT2",
+"language": "GDScript",
+"path": "res://State2class/StateFactoryT2.gd"
+}, {
+"base": "Node2D",
+"class": "StateMachine2",
+"language": "GDScript",
+"path": "res://State2class/StateMachine2.gd"
+}, {
+"base": "Node",
+"class": "StateT2",
+"language": "GDScript",
+"path": "res://State2class/StateT2.gd"
+} ]
+_global_script_class_icons={
+"AirState": "",
+"ChargeState": "",
+"FallStateT2": "",
+"IdleState": "",
+"IdleStateT2": "",
+"JumpStateT2": "",
+"MoveStateT2": "",
+"PersistentState": "",
+"RunState": "",
+"State": "",
+"StateFactory": "",
+"StateFactoryT2": "",
+"StateMachine2": "",
+"StateT2": ""
+}
+
+[application]
+
+config/name="State Machine practice 2"
+config/icon="res://icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
